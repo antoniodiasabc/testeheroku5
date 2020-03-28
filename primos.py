@@ -24,6 +24,8 @@ def nao_entre_em_panico():
         if (ehprimo):
             primos = primos + str(numero) + ","
             p += 1
+            if(p % 10 == 0):
+                primos = primos + "<br>"
         numero+=1
 
     return primos
